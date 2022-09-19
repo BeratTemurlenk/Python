@@ -15,4 +15,4 @@ print(totaal_toegangsprijs + (totaal_vipprijs * aantal_personen ))
 
 prijs = totaal_toegangsprijs + totaal_vipprijs * aantal_personen 
 
-print(f'Dit geweldige dagje-uit met {aantal_personen} mensen in de Speelhal met 45 minuten VR kost je maar {prijs}')
+print(f'Dit geweldige dagje-uit met {aantal_personen} mensen in de Speelhal met {aantal_minuten} minuten VR kost je maar {prijs}')
