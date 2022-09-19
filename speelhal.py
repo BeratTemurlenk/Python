@@ -13,3 +13,6 @@ totaal_vipprijs = aantal_minuten * vip_prijs_per_minuut
 
 print(totaal_toegangsprijs + (totaal_vipprijs * aantal_personen ))
 
+prijs = totaal_toegangsprijs + totaal_vipprijs * aantal_personen 
+
+print(f'Dit geweldige dagje-uit met 4 mensen in de Speelhal met 45 minuten VR kost je maar {prijs}')
