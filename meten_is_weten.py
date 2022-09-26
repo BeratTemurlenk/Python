@@ -1,5 +1,5 @@
-A = int(input('Vul een geheel getal in!'))
-B = int(input('Vul nog een geheel getal in!'))
+A = int(input('Vul getal A in!'))
+B = int(input('Vul getal B in!'))
 
 
 
@@ -9,4 +9,7 @@ if A > B:
 
 elif A < B:
     min = A
-    print(f'A is het kleinste getal, De waarde van A is {min}  ')
+    print(f'A is het kleinste getal, De waarde van A is {min}!  ')
+
+else:
+    print('A en B zijn even groot!')
