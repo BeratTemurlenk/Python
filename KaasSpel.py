@@ -3,7 +3,6 @@ if geel_vraag == 'ja':
     gaten_vraag = input('zitten er gaten in de kaas?')
     if gaten_vraag == 'ja':
         duur_vraag = input('Is de kaas belachelijk duur?')
-        input(duur_vraag)
         if duur_vraag == 'ja':
             print('Jouw kaas is de Emmenthaler!')
         elif duur_vraag == 'nee':
@@ -16,7 +15,6 @@ if geel_vraag == 'ja':
                 print('Jouw kaas is de Goudse kaas!') 
 elif geel_vraag == 'nee':
     schimmel_vraag = input('heeft de kaas blauwe schimmel?')
-    input(schimmel_vraag)
     if schimmel_vraag == 'ja':
         korst_vraag_schimmel = input('Heeft de kaas een korst?')
         if korst_vraag_schimmel == 'ja':
