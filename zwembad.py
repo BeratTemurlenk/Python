@@ -1,6 +1,6 @@
-hoogte_zwembad = int(input("Hoe hoog is uw zwembad?"))
-breedte_zwembad = int(input("Hoe breed is uw zwembad?"))
-diepte_zwembad = int(input("Hoe diep is uw zwembad?"))
+hoogte_zwembad = float(input("Hoe hoog is uw zwembad?"))
+breedte_zwembad = float(input("Hoe breed is uw zwembad?"))
+diepte_zwembad = float(input("Hoe diep is uw zwembad?"))
 grond_totaal_zwembad = int(hoogte_zwembad * breedte_zwembad * diepte_zwembad)
 uitgraven_prijs = int(grond_totaal_zwembad * 25)
 afvoeren_grondprijs = int(grond_totaal_zwembad * 32.50)
@@ -17,9 +17,9 @@ print(hoogte_zwembad*breedte_zwembad*diepte_zwembad)
 print('stap 2')
 
 print(f"""Offerte voor een zwembad van {hoogte_zwembad} bij {breedte_zwembad} bij {diepte_zwembad} meter (inhoud: xx m3)"
-Uitgraven: {uitgraven_prijs} euro
-Afvoeren grond:{afvoeren_grondprijs} euro
-totaal: {totaal_prijs2} euro""")
+Uitgraven: {uitgraven_prijs:.2f} euro
+Afvoeren grond:{afvoeren_grondprijs:.2f} euro
+totaal: {totaal_prijs2:.2f} euro""")
 
 print('stap 3 en 4')
 
@@ -34,10 +34,10 @@ elif voorrij_kilometers > 50 and grond_totaal_zwembad > 20:
 
 
 print(f"""Offerte voor een zwembad van {hoogte_zwembad} bij {breedte_zwembad} bij {diepte_zwembad} meter (inhoud: xx m3)"
-Uitgraven: {uitgraven_prijs} euro
-Afvoeren grond: {afvoeren_grondprijs} euro
-Voorrijkosten: {Voorrijkosten} euro
-totaal: {totaal_prijs3} euro""")
+Uitgraven: {uitgraven_prijs:.2f} euro
+Afvoeren grond: {afvoeren_grondprijs:.2f} euro
+Voorrijkosten: {Voorrijkosten:.2f} euro
+totaal: {totaal_prijs3:.2f} euro""")
 
 
 
