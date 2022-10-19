@@ -25,11 +25,11 @@ print('stap 3 en 4')
 
 if voorrij_kilometers < 50 and grond_totaal_zwembad < 20:
     Voorrijkosten = 100 + (1.25 * voorrij_kilometers)
-elif voorrij_kilometers > 50 and grond_totaal_zwembad < 20:
+elif voorrij_kilometers >= 50 and grond_totaal_zwembad < 20:
     Voorrijkosten = 100 + (1.15 * voorrij_kilometers)
 elif voorrij_kilometers < 50 and grond_totaal_zwembad > 20:
     Voorrijkosten = 250 + (2.15 * voorrij_kilometers)
-elif voorrij_kilometers > 50 and grond_totaal_zwembad > 20:
+elif voorrij_kilometers >= 50 and grond_totaal_zwembad > 20:
     Voorrijkosten = 250 + (2.05 * voorrij_kilometers)
 
 

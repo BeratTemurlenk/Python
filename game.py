@@ -59,5 +59,5 @@ if vraag_zwaard == 'mount everest':
     print('YES, dankzij de zwaard heb ik de monster kunnen verslaan. Je loopt het bos uit en bent klaar. Je juicht van vrede. EINDE')
 else:
     print('Je probeerde het monster te verslaan maar je hebt het niet gehaald. Je bent vermoord door de monster. LOSER!')
-    exit()
+    
     
