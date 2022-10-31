@@ -1,6 +1,10 @@
-for x in range(1,13,1):
-    print(f'{x} am')
+for x in range(0,25):
 
-for x in range(1,13,1):
-    print(f'{x} pm')
+    if x < 13:
+        print(f'{x} Am')
+
+    else:
+        print(f'{x-12} pm')
+
+
 
