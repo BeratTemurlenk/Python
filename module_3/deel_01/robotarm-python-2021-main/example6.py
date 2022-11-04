@@ -11,13 +11,13 @@ robotArm.moveRight()
 
 for x in range(3):
     robotArm.grab()
-    robotArm.moveRight()
-    robotArm.drop()
     robotArm.moveLeft()
+    robotArm.drop()
+    robotArm.moveRight()
     robotArm.grab()
-    robotArm.moveLeft()
-    robotArm.drop()
     robotArm.moveRight()
+    robotArm.drop()
+    robotArm.moveLeft()
     
 
 # Na jouw code wachten tot het sluiten van de window:
