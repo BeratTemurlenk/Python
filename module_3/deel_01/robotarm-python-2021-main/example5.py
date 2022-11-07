@@ -21,12 +21,6 @@ for x in range(8):
         robotArm.moveLeft()
         robotArm.moveLeft()
 
-# for x in range(7):
-#     robotArm.moveLeft()
-#     robotArm.moveLeft()
-#     robotArm.grab()
-#     robotArm.moveRight()
-#     robotArm.drop()
 
 
 
