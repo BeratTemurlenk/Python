@@ -12,7 +12,7 @@ while True:
         break
     except ValueError:
         print('Geen geldig antwoord, probeer opnieuw!')
-
+        break
 while True:
     try:
         antwoord_hoeveel_pizza2 = int(input(vraag_hoeveel_medium))
