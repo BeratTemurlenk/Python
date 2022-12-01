@@ -11,9 +11,9 @@ for x in range(20):
     if begin_vraag == 'nee':
         break
     nummer = random.randint(1,1000)
-    print(nummer)
     for x in range(10):
         raad_vraag = int(input('raad het getal!'))
+
         if raad_vraag == nummer:
             print('geraden')
             teller += 1

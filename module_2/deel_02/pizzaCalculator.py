@@ -7,13 +7,12 @@ vraag_hoeveel_small =  'hoeveel small pizza wil je?'
 vraag_hoeveel_medium = 'hoeveel medium pizza wil je?'
 vraag_hoeveel_large = 'hoeveel large pizza wil je?'
 while True: 
-    try:
-        antwoord_hoeveel_pizza1 = int(input(vraag_hoeveel_small))
-        break
+    try
     except ValueError:
         print('Geen geldig antwoord, probeer opnieuw!')
-        break
 while True:
+        antwoord_hoeveel_pizza1 = int(input(vraag_hoeveel_small))
+        break
     try:
         antwoord_hoeveel_pizza2 = int(input(vraag_hoeveel_medium))
         break
