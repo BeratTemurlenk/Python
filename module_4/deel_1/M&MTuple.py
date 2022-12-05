@@ -11,3 +11,19 @@ for x in range(vraag):
 
 
 print(zakje)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
