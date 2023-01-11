@@ -21,6 +21,3 @@
 
 # print(f'Het minimum is: {min}')
 # print(f'het maximum is: {max}')
-som = 26.500 / 1.3
-
-print(som)

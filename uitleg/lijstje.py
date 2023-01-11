@@ -40,7 +40,7 @@ print(lijstje)
 lijstje.insert(0,36)
 print(lijstje)
 
-#8
+#89
 print(36+19+27+3+25)
 print('ja')
 
