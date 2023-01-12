@@ -1,7 +1,10 @@
 from fruitmand import fruitmand
 kleur = []
 
-fruitmand.pop(4)
+for y in fruitmand:
+    druif = ['druif']
+    if y['name'] ==  'druif':
+        fruitmand.remove(y)
 
 for x in fruitmand:
     v = x['color']
