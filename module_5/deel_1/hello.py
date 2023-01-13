@@ -1,5 +1,12 @@
-def geef_hello_terug (antwoord: str) -> str:
-    zin = print('Hello from function town')
-    return zin
+vraag = int(input('hoeveel?'))
 
-zin = geef_hello_terug('hello from function town')
+
+def geef_hello_terug (aantal: int):
+    antwoord = ''
+    for x in range(1,aantal + 1):
+        antwoord += f'Hello from function town {x} \n'
+    return antwoord
+
+
+
+print(geef_hello_terug(vraag))
