@@ -1,6 +1,3 @@
-vraag = int(input('hoeveel?'))
-
-
 def geef_hello_terug (aantal: int):
     antwoord = ''
     for x in range(1,aantal + 1):
@@ -9,4 +6,4 @@ def geef_hello_terug (aantal: int):
 
 
 
-print(geef_hello_terug(vraag))
+print(geef_hello_terug(8))
