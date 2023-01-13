@@ -1,8 +1,5 @@
-# ik maak 2 lege lijsten aan. Ik maak een input in een while loop waar ik de naam vraag aan de gebruiker en 
-# append de naam aam beide lijsten als de naam er nog niet in zit.
-# ik maak allerlei conditions met if en elif dat als de gebruiker geen 3 unieke namen invult dat de gebruiker niet kan beginnen. 
-# dan maak ik een controle aan met een checker en een teller zodat niemand zichzelf krijgt als lootje. Ik doe dit door lijst 2 te shuffelen. 
-# ik geef dan index[teller] van beide lijsten aan elkaar, als een van de namen gelijk zijn shuffle ik de de 2de lijst opnieuw. 
-# als de namen niet gelijk zijn aan elkaar geef ik de checker en teller +1. Als de checker gelijk is aan len(namenlijst) breek ik de loop.
-# dan print ik de uitslag met een nieuwe teller.
+# ik vraag de gebruiker een naam. na 3 vragen geef ik de optie of de gebruiker al wilt beginnen met lootjes trekken.
+# als er minimaal 3 unieke namen zijn geschreven kan de gebruiker beginnen met lootjes trekken, anders zal de computer aangeven 
+# dat je opnieuw een naam moet gaan typen. als de gebruiker ja aantikt op de vraag zullen de lootjes worden getrokken.
+# de 2de lijstje word geshuffeld en word gecontroleerd of iemand zichzelf loot.als dat zois word er geshuffeld totdat niemand zichzelf heeft. 
 # klaar!!!!
