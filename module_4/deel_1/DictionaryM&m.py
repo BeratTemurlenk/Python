@@ -17,4 +17,4 @@ for x in range(vraag):
         zak_dictionary[kleur] += 1
 
 
-print(zak_dictionary).
+print(zak_dictionary)
