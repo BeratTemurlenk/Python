@@ -46,8 +46,6 @@ elif choice == 'C':
 elif choice == 'D':
     delen = print(division(nummer1, nummer2))
 elif choice == 'E':
-    print(nummer1)
-    print(nummer2)
     print(nummer1 + nummer2)
 elif choice == 'F':
     print(nummer1 - nummer2)

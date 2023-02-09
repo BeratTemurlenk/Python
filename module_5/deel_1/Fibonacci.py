@@ -14,6 +14,8 @@ def fibo_lijst(fibo_lijst1: [], vraag: int) -> int:
     print(fibo_lijst1)
     gulden_snede = antwoord / getal_2
     return gulden_snede
+
+
 start = [0, 1]
 vraag_getal = int(input('geef een getal!'))
  
