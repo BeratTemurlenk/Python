@@ -1,7 +1,17 @@
 
-def tafel_getal (aantal: int) -> str:
+def tafel_getal (aantal):
+    antwoord = ''
     for x in range(1,11):
-        print(f'{x} x {aantal} = {x * aantal}')
+        antwoord += (f'{x} x {aantal} = {x * aantal} \n')
+    return antwoord
 
-tafel = int(input('Van welk getal wilt u de tafel zien?'))
-tafel_getal(tafel)
+tafel = int(input('Van welk getal wilt u de tafel zien? '))
+print(tafel_getal(tafel))
+
+
+
+
+
+
+
+

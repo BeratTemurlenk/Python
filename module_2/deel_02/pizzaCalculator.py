@@ -7,7 +7,7 @@ vraag_hoeveel_small =  'hoeveel small pizza wil je?'
 vraag_hoeveel_medium = 'hoeveel medium pizza wil je?'
 vraag_hoeveel_large = 'hoeveel large pizza wil je?'
 while True: 
-    try
+    try:
     except ValueError:
         print('Geen geldig antwoord, probeer opnieuw!')
 while True:

@@ -8,7 +8,7 @@ def fibo_lijst(fibo_lijst1, vraag,) -> int:
     antwoord = getal_1 + getal_2
     fibo_lijst1.append(antwoord)
     
-    print(fibo_lijst1)
+
     
     
     if len(fibo_lijst1) <= vraag_getal:

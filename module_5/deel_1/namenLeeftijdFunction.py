@@ -10,8 +10,6 @@ def naam_leeftijd () -> str:
     return dictionary_naam_leeftijd
 
 
-
-
 lijstje = []
 
 while True:
