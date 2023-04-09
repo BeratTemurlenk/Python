@@ -40,6 +40,5 @@ TEKST = ("Welkom bij mijn nieuwe game. Kies uit een character door zijn / haar n
 
 
 
-my_dicts = {'a': 3,'b': 2,'c': 1,'d': 0}
 
 
