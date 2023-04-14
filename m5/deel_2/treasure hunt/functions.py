@@ -27,7 +27,9 @@ def getPersonCashInGold(personCash:dict) -> float:
 ##################### M04.D02.O4 #####################
 
 def getJourneyFoodCostsInGold(people:int, horses:int) -> float:
-    pass
+    totaal = ((COST_FOOD_HORSE_COPPER_PER_DAY * JOURNEY_IN_DAYS * horses) + (COST_FOOD_HUMAN_COPPER_PER_DAY * JOURNEY_IN_DAYS * people)) / 50
+    return totaal
+
 
 ##################### M04.D02.O5 #####################
 
