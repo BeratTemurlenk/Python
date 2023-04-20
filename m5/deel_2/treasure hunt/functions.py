@@ -22,6 +22,12 @@ def getPersonCashInGold(personCash:dict) -> float:
     gold = personCash['gold']   
     platinum = personCash['platinum'] * 25
     totaal = copper + silver + gold + platinum
+    print(copper)
+    print(silver)
+    print(gold)
+    print(platinum)
+    
+    
     return totaal
 
 ##################### M04.D02.O4 #####################
@@ -34,13 +40,20 @@ def getJourneyFoodCostsInGold(people:int, horses:int) -> float:
 ##################### M04.D02.O5 #####################
 
 def getFromListByKeyIs(list:list, key:str, value:any) -> list:
-    pass
+    
+    for x in list:
+        if x[key] != value:
+            list.remove(x)
+    return list
+getFromListByKeyIs(friends,'shareWith',True)
+
+
 
 def getAdventuringPeople(people:list) -> list:
-    pass
+    return getFromListByKeyIs(people, "adventuring", True)
 
 def getShareWithFriends(friends:list) -> int:
-    pass
+    return getFromListByKeyIs(friends, "shareWith", True)
 
 def getAdventuringFriends(friends:list) -> list:
     pass
