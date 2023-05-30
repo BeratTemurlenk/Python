@@ -1,4 +1,4 @@
-
+lijst = ["!",".","?"]
 EASY_TEXT = """Ik hou van programmeren. Programmeren is leuk. 
 Ik kan veel dingen maken met programmeren. Ik kan een website maken. 
 Ik kan een spel maken. Ik kan een chatbot maken. 
@@ -36,8 +36,8 @@ def getFileContentAsString(textFile: str) -> str:
 def getNumberOfCharacters(text: str) -> int:
     aantal = 0
     for x in text:
-       if x in ALLOWED_IN_WORD:
-        aantal += 1
+        if x in ALLOWED_IN_WORD:
+            aantal += 1
     return aantal
 
 
@@ -49,7 +49,7 @@ def getNumberOfCharacters(text: str) -> int:
 def getNumberOfSentences(text: str) -> int:
     teller = 0
     for x in text:
-        if x == '.' or x == '?' or x == '!':
+        if x in lijst:
             teller += 1
 
     return teller
@@ -67,16 +67,12 @@ def getNumberOfWords(text: str) -> int:
     return teller1
 
 
-def geef_terug_avi(aantal_woorden,aantal_zinnen,text: str) -> int: 
+def geef_terug_avi(text: str) -> int: 
 
 
-    for x in text:
-        if x == ' ' or x == '\n':
-            aantal_woorden += 1
+    aantal_woorden = getNumberOfWords(text)
+    aantal_zinnen = getNumberOfSentences(text)
 
-    for y in text:
-        if y == '.' or y == '!' or y == '?':
-            aantal_zinnen += 1
 
     gemiddelde = aantal_woorden / aantal_zinnen
 

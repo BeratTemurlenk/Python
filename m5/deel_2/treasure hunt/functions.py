@@ -1,6 +1,9 @@
 import time
 from termcolor import colored
 from data import *
+import math
+
+
 
 ##################### M04.D02.O2 #####################
 
@@ -17,10 +20,10 @@ def platinum2gold(amount:int) -> float:
     return amount * 25
 
 def getPersonCashInGold(personCash:dict) -> float:
-    copper = personCash['copper'] / 50
-    silver = personCash['silver'] / 5
+    copper = copper2gold(personCash['copper'])
+    silver = silver2gold(personCash['silver'])
     gold = personCash['gold']   
-    platinum = personCash['platinum'] * 25
+    platinum = platinum2gold(personCash['platinum'])
     totaal = copper + silver + gold + platinum
     print(copper)
     print(silver)
@@ -39,13 +42,19 @@ def getJourneyFoodCostsInGold(people:int, horses:int) -> float:
 
 ##################### M04.D02.O5 #####################
 
+
+
 def getFromListByKeyIs(list:list, key:str, value:any) -> list:
     
-    for x in list:
-        if x[key] != value:
-            list.remove(x)
-    return list
-getFromListByKeyIs(friends,'shareWith',True)
+    nieuwe_lijst = []
+
+    for x in list:             
+        if x[key] == value:
+            nieuwe_lijst.append(x)
+    
+    return nieuwe_lijst
+
+
 
 
 
@@ -56,42 +65,87 @@ def getShareWithFriends(friends:list) -> int:
     return getFromListByKeyIs(friends, "shareWith", True)
 
 def getAdventuringFriends(friends:list) -> list:
-    pass
+    new_friends = []
+    for x in friends:             
+        if x['shareWith'] and x['adventuring'] == True:
+            new_friends.append(x)
+    return new_friends
+
 
 ##################### M04.D02.O6 #####################
 
 def getNumberOfHorsesNeeded(people:int) -> int:
-    pass
+    return math.ceil(people / 2) 
 
 def getNumberOfTentsNeeded(people:int) -> int:
-    pass
+    return math.ceil(people / 3)
 
 def getTotalRentalCost(horses:int, tents:int) -> float:
-    pass
+    silverprijs_paard = (horses * COST_HORSE_SILVER_PER_DAY) * JOURNEY_IN_DAYS 
+    totaal_kosten_paard = silver2gold(silverprijs_paard)
+    kosten_tent = tents * COST_TENT_GOLD_PER_WEEK * math.ceil(JOURNEY_IN_DAYS/7) 
+    totaal = totaal_kosten_paard + kosten_tent
+    return totaal
+
 
 ##################### M04.D02.O7 #####################
 
 def getItemsAsText(items:list) -> str:
-    pass
+    antwoord = ''
+    for x in items:
+        if antwoord != '':
+            antwoord += ', '
+        antwoord +=  (str(x["amount"]) + x["unit"] +' '+ x["name"])
+    return antwoord
 
 def getItemsValueInGold(items:list) -> float:
-    pass
-
+    new_prijs = 0
+    for x in items:
+        prijs = x['amount'] * x['price']['amount']
+        if x['price']['type'] == 'copper':
+            new_prijs += copper2gold(prijs)
+        if x['price']['type'] == 'silver':
+            new_prijs += silver2gold(prijs)
+        if x['price']['type'] == 'platinum':
+            new_prijs += platinum2gold(prijs)
+        if x['price']['type'] == 'gold':
+            new_prijs += prijs
+    return new_prijs
 ##################### M04.D02.O8 #####################
 
 def getCashInGoldFromPeople(people:list) -> float:
-    pass
+    prijs = 0
+    for x in people:
+        prijs += platinum2gold(x['cash']['platinum'])
+        prijs += x['cash']['gold']
+        prijs += silver2gold(x['cash']['silver'])
+        prijs += copper2gold(x['cash']['copper'])
+    return prijs
 
 ##################### M04.D02.O9 #####################
 
 def getInterestingInvestors(investors:list) -> list:
-    pass
+    investors1 = []
+    
+    for x in investors:
+        if x['profitReturn'] <= 10:
+            investors1.append(x)
+    return investors1
+print(getInterestingInvestors(investors))
 
 def getAdventuringInvestors(investors:list) -> list:
-    pass
+    real_investors = []
+    for x in investors:
+        if x['profitReturn'] <= 10 and x['adventuring'] == True:
+            real_investors.append(x)
+    return real_investors
+print(getAdventuringInvestors(investors))
 
 def getTotalInvestorsCosts(investors:list, gear:list) -> float:
-    pass
+    resultaat = getAdventuringInvestors(investors)
+    return gear
+    
+
 
 ##################### M04.D02.O10 #####################
 

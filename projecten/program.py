@@ -9,7 +9,7 @@ def calculate():
     characterLabel.config(text=f"karakters: {getNumberOfCharacters(textToBeCalculated)}")
     sentencesLabel.config(text =f"Zinnen: {getNumberOfSentences(textToBeCalculated)}")
     woordlabel.config(text= f"woorden: {getNumberOfWords(textToBeCalculated)}")
-    aviLabel.config(text= f"score: {geef_terug_avi(0,0,textToBeCalculated)}")
+    aviLabel.config(text= f"score: {geef_terug_avi(textToBeCalculated)}")
 
 
 #variables TK
