@@ -15,7 +15,6 @@ testGearList1 = [{
 }]
 
 print(getTotalInvestorsCosts(testInverstorsList1, testGearList1))
-
 if getTotalInvestorsCosts(testInverstorsList1, testGearList1) != 21.54:
     print_colorvars(vars=['Test 1 is False'], color='red')
 else:
@@ -35,6 +34,9 @@ testGearList2 = [{
     }
 }]
 
+print(getTotalInvestorsCosts(testInverstorsList1, testGearList2))
+
+
 if getTotalInvestorsCosts(testInverstorsList1, testGearList2) != 20.72:
     print_colorvars(vars=['Test 2 is False'], color='red')
 else:
@@ -51,6 +53,9 @@ testInverstorsList2 = [{
     'profitReturn' : 1,
     'adventuring' : False
 }]
+
+print(getTotalInvestorsCosts(testInverstorsList2, testGearList2))
+
 
 if getTotalInvestorsCosts(testInverstorsList2, testGearList2) != 20.72:
     print_colorvars(vars=['Test 3 is False'], color='red')
@@ -78,6 +83,10 @@ testGearList3 = [{
     }
 }]
 
+
+print(getTotalInvestorsCosts(testInverstorsList1, testGearList3))
+
+
 if getTotalInvestorsCosts(testInverstorsList1, testGearList3) != 79.34:
     print_colorvars(vars=['Test 4 is False'], color='red')
 else:
@@ -94,6 +103,11 @@ testInverstorsList3 = [{
     'profitReturn' : 1,
     'adventuring' : False
 }]
+
+
+print(getTotalInvestorsCosts(testInverstorsList3, testGearList3))
+
+
 
 if getTotalInvestorsCosts(testInverstorsList3, testGearList3) != 158.68:
     print_colorvars(vars=['Test 5 is False'], color='red')
